@@ -1,0 +1,224 @@
+:root {
+	--mainWhite: #fff;
+	--mainBlack: #000;
+	--navBlack: #1c1c1c;
+	--lightGrey: #f9f9f9;
+}
+
+html, body {
+	color: var(--mainBlack);
+	background-color: var(--mainWhite);
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/*Nav*/
+
+#nav {
+	width: 100%;
+	background: var(--navBlack);
+	color: var(--mainWhite);
+	height: 4.5rem;
+}
+
+#logo {
+	font-size: 1.5rem;
+	float: left;
+	padding: 2rem;
+}
+
+#nav ul {
+	display: grid;
+	float: right;
+	width: 20rem;
+	text-decoration: none;
+	list-style: none;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 1.5rem;
+}
+
+.active {
+	color: #8C4807;
+}
+
+/*Header*/
+
+#header {
+	background: url('Images/mainBackground.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: calc(100vh - 4.5rem);
+	z-index: 0;
+}
+
+/*First section*/
+
+#first_container {
+}
+
+#firstSection {
+	height: 15rem;
+	width: 60%;
+	display: grid;
+	grid-template-rows: 40% 60%;
+	text-align: center;
+	margin: -70px auto;
+	z-index: 100;
+	background-color: var(--mainWhite);
+	border: 1px dotted var(--mainBlack);
+}
+
+#firstSection h2 {
+	margin-top: 4rem;
+}
+
+#firstSection p {
+	text-align: center;
+	margin: auto;
+}
+
+/*Second Section*/
+
+#secondSection {
+	height: 25rem;
+	width: 60%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 90px auto;
+	background-color: black;
+	grid-gap: 2rem;
+	background-color: var(--mainWhite);
+	padding-left: 4rem;
+	padding-right: 4rem;
+} 
+
+#breakfastImg {
+	background-image: url(Images/breakfast.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#breakfastDiv {
+	width: 100%;
+	height: 100%;
+	display: inline;
+	background-color: var(--mainBlack);
+	opacity: .1;
+	position: absolute;
+	transition: 2s all;
+	display: grid;
+	grid-template-rows: 40% 60%;
+	color: var(--mainWhite);
+	text-align: center;
+	justify-content: center;
+}
+
+#lunchImg {
+	background-image: url(Images/lunch.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lunchDiv {
+	width: 100%;
+	height: 100%;
+	display: inline;
+	background-color: var(--mainBlack);
+	opacity: .1;
+	position: absolute;
+	transition: 2s all;
+	display: grid;
+	grid-template-rows: 40% 60%;
+	color: var(--mainWhite);
+	text-align: center;
+	justify-content: center;
+}
+
+#dinnerImg {
+	background-image: url(Images/dinner.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#dinnerDiv {
+	width: 100%;
+	height: 100%;
+	display: inline;
+	background-color: var(--mainBlack);
+	opacity: .1;
+	position: absolute;
+	transition: 2s all;
+	display: grid;
+	grid-template-rows: 40% 60%;
+	color: var(--mainWhite);
+	text-align: center;
+	justify-content: center;
+}
+
+#breakfastDiv:hover, #lunchDiv:hover, #dinnerDiv:hover {
+	opacity: .8;
+	cursor: pointer;
+	width: 85%;
+	height: 85%;
+}
+
+#secondSection h3 {
+	margin: 6rem auto;
+	text-transform: uppercase;
+}
+
+/*Third Section*/
+
+#thirdSection {
+	width: 100%;
+	height: 220px;
+	background-color: var(--lightGrey);
+	display: grid;
+	margin-top: -10rem;
+	text-align: center;
+	padding-top: 5rem;
+	justify-items: center;
+}
+
+#thirdSection > p {
+	width: 50%;
+}
+
+#dots {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 1rem;
+}
+
+.dots {
+	width: .5rem;
+	height: .5rem;
+	border-radius: 100px;
+	background-color:  #8C4807;
+	cursor: pointer;
+	margin: .2rem;
+	opacity: .7;
+	transition: 2s all;
+}
+
+.dots:hover {
+	opacity: 1;
+	width: .6rem;
+	height: .6rem;
+}
