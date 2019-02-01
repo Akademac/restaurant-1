@@ -3,6 +3,7 @@
 	--mainBlack: #000;
 	--navBlack: #1c1c1c;
 	--lightGrey: #f9f9f9;
+	--mainOrange: #8C4807;
 }
 
 html, body {
@@ -32,15 +33,24 @@ html, body {
 #nav ul {
 	display: grid;
 	float: right;
-	width: 20rem;
+	width: 22rem;
 	text-decoration: none;
 	list-style: none;
 	grid-template-columns: repeat(4, 1fr);
 	padding: 1.5rem;
+	text-align: center;
+
 }
 
-.active {
-	color: #8C4807;
+li a{
+	color: var(--mainWhite);
+	text-decoration: none;
+}
+
+li a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: var(--mainOrange);
 }
 
 /*Header*/
@@ -111,7 +121,7 @@ html, body {
 	height: 100%;
 	display: inline;
 	background-color: var(--mainBlack);
-	opacity: .1;
+	opacity: 0;
 	position: absolute;
 	transition: 2s all;
 	display: grid;
@@ -136,7 +146,7 @@ html, body {
 	height: 100%;
 	display: inline;
 	background-color: var(--mainBlack);
-	opacity: .1;
+	opacity: 0;
 	position: absolute;
 	transition: 2s all;
 	display: grid;
@@ -161,7 +171,7 @@ html, body {
 	height: 100%;
 	display: inline;
 	background-color: var(--mainBlack);
-	opacity: .1;
+	opacity: 0;
 	position: absolute;
 	transition: 2s all;
 	display: grid;
@@ -210,9 +220,9 @@ html, body {
 	width: .5rem;
 	height: .5rem;
 	border-radius: 100px;
-	background-color:  #8C4807;
+	background-color: var(--mainOrange);
 	cursor: pointer;
-	margin: .2rem;
+	margin: .1rem;
 	opacity: .7;
 	transition: 2s all;
 }
@@ -221,4 +231,125 @@ html, body {
 	opacity: 1;
 	width: .6rem;
 	height: .6rem;
+}
+
+/*Fourth Section*/
+
+hr {
+	width: 90%;
+}
+
+#fourthSection {
+	display: grid;
+	margin: 5rem auto;
+	width: 70%;
+	height: 15rem;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	grid-gap: 2rem;
+	justify-content: center;
+}
+
+.fourthSection {
+	border: 1px dotted var(--mainBlack);
+	justify-items: center;
+	padding-top: 2rem;
+	border-radius: .5rem;
+
+}
+
+#services > p {
+	color: var(--mainOrange);
+}
+
+#menuButton {
+	background-color: var(--mainOrange);
+	display: inline-block;
+	color: var(--mainWhite);
+	padding: .5rem;
+	border-radius: .2rem;
+	opacity: .7;
+	margin-top: .5rem;
+
+}
+
+#menuButton:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+/*Footer*/
+
+#footer {
+	width: 100%;
+	height: 20rem;
+	background-image: url(Images/footer1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-color: var(--mainBlack);
+	opacity: .9;
+}
+
+#footerDiv {
+	width: 90%;
+	height: 15rem;
+	display: grid;
+	color: var(--mainWhite);
+	margin: 1rem auto;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.footer {
+	padding: 2rem;
+	font-weight: bolder; 
+}
+
+	/*Second Page*/
+
+/*Menu*/
+
+#menu_2 {
+	width: 60%;
+	height: 140rem;
+	border: 1px dotted var(--mainBlack);
+	margin: 5rem auto;
+	display: grid;
+	grid-template-rows: 12% 1% 25% 1% 25% 1% 25%;
+	grid-gap: 2rem;
+	margin-bottom: 15rem;
+	text-align: center;
+}
+
+#menu_description {
+	margin-top: 3rem;
+	padding: 2rem;
+}
+
+.menu_2 {
+	padding: .5rem;
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+
+.menu_items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 3rem;
+}
+
+.menu_items img {
+	width: 300px;
+	height: 220px;
+}
+
+#dinner_description {
+	width: 250px;
+	margin: 2rem auto;
+}
+
+#dinner_img {
+	width: 300px;
+	height: 220px;	
 }
