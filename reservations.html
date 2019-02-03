@@ -12,8 +12,12 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 <!--Main CSS-->  		
 		<link rel='stylesheet' type='text/css' href='main.css' /> 
+<!--Javascript-->
+		<script src='main_2.js'></script>
+
+
 </head>
-<body>
+	<body>
 
 <!--Nav-->
 
@@ -27,6 +31,43 @@
 			</ul>
 		</div>
 
+<!--Main div-->
+
+		<div id='container_3'>
+			<div class='res_divs'>
+				<div id='res_form_1'>
+					<h1>Reservations</h1>
+					<p>This reservation page is perfect for a contact form or for OpenTable integration</p>
+					<p>Fields marked with an <span id='required_star'>*</span> are required!</p>
+					<form>
+						<label for='name'>Name</label><span id='required_star'>*</span>
+						<input type="text" id='name' name="name" required />						
+						<label for='email'>Email</label><span id='required_star'>*</span>
+						<input type="text" id='email' name="email" required />
+						<label for='party_size'>Party Size</label><span id='required_star'>*</span>
+						<select>
+							<option value='0'></option>
+							<option value='1'>1 person</option>
+							<option value='2'>2 person</option>
+							<option value='3'>3 person</option>
+							<option value='4'>4 person</option>
+							<option value='5'>5 person</option>
+							<option value='6'>6 person</option>
+						</select>
+						<label for='telephone'>Telephone</label>
+						<input type="text" id='telephone' name="telephone" />
+						<label for='res_date'>Reservation date</label><span id='required_star'>*</span>
+						<input type="date" id='res_date' name="res_date" required  min='2019-01-01' />
+						<label for='res_date'>Reservation time</label><span id='required_star'>*</span>
+						<select id='select_time'>
+						</select>
+						<label for='spec_request'>Special Request</label>
+						<textarea name='spec_request' id="spec_request" cols="20" rows="10"></textarea>
+						<input type='submit' id='submit' value="Submit" />
+					</form>
+				</div>
+			</div>
+		</div>
 
 <!--Footer-->
 
@@ -50,7 +91,5 @@
 				</div>
 			</div>
 		</footer>
-
-		<script src='main.js'></script>
-</body>
+	</body>
 </html>
