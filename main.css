@@ -197,24 +197,29 @@ li a:hover {
 
 #thirdSection {
 	width: 100%;
-	height: 220px;
+	height: 350px;
 	background-color: var(--lightGrey);
 	display: grid;
 	margin-top: -10rem;
 	text-align: center;
 	padding-top: 5rem;
+	grid-template-rows: 20% 40% 20%;
 	justify-items: center;
 }
 
-#thirdSection > p {
+
+#quotes {
 	width: 50%;
+	text-align: center;
 }
 
 #dots {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	padding: 1rem;
 }
+
+
 
 .dots {
 	width: .5rem;
@@ -360,19 +365,20 @@ hr {
 /*Reservation*/
 
 #container_3 {
-	width: 70%;
+	width: 100%;
 	height: 53rem;
 	display: grid;
-	align-items: center;
-	margin: 2rem auto;
+	grid-template-columns: 60% 30%;
 }
 
-.res_divs {
+#resTitle {
+	margin-left: 0px;
 }
 
 #res_form_1 {
 	display: grid;
-	padding-left: 7rem;
+	text-align: left;
+	padding-left: 10%;
 	padding-top: 1rem;
 }
 
@@ -380,13 +386,9 @@ hr {
 	color: red;
 }
 
-form label {
-	
-}
-
 form input {
 	display: block;
-	margin-top: .5rem;
+	margin-top: .7rem;
 	margin-bottom: 1rem;
 }
 
@@ -407,7 +409,7 @@ form select, input, #spec_request {
 	margin-top: .5rem;
 }
 
-#submit {
+.submit {
 	width: 4.2rem;
 	height: 2rem;
 	text-align: center;
@@ -417,15 +419,31 @@ form select, input, #spec_request {
 	cursor: pointer;
 	opacity: .8;
 	padding: .1rem;
-	margin-top: 1rem;
+	margin-top: 1.5rem;
 	clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 	border: none;
 	transition: 1s all;
 }
 
-#submit:hover {
+.submit:hover {
 	opacity: 1;
 	clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+}
+
+#res_form_2 {
+	border: 1px dotted var(--mainBlack);
+	text-align: center;
+	margin-top: 4.8rem;
+}
+
+#res_form_2 input, #select_time_2, #party_size_2 {
+	margin: 1rem auto;
+}
+
+#submit_2 {
+	width: 7.2rem;
+	height: 2rem;
+	margin-top: 2rem;
 }
 
 /*Catering*/

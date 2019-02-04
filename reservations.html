@@ -36,7 +36,7 @@
 		<div id='container_3'>
 			<div class='res_divs'>
 				<div id='res_form_1'>
-					<h1>Reservations</h1>
+					<h1 id='resTitle'>Reservations</h1>
 					<p>This reservation page is perfect for a contact form or for OpenTable integration</p>
 					<p>Fields marked with an <span id='required_star'>*</span> are required!</p>
 					<form>
@@ -45,28 +45,41 @@
 						<label for='email'>Email</label><span id='required_star'>*</span>
 						<input type="text" id='email' name="email" required />
 						<label for='party_size'>Party Size</label><span id='required_star'>*</span>
-						<select>
-							<option value='0'></option>
-							<option value='1'>1 person</option>
-							<option value='2'>2 person</option>
-							<option value='3'>3 person</option>
-							<option value='4'>4 person</option>
-							<option value='5'>5 person</option>
-							<option value='6'>6 person</option>
+						<select class='party_size'>
 						</select>
 						<label for='telephone'>Telephone</label>
 						<input type="text" id='telephone' name="telephone" />
 						<label for='res_date'>Reservation date</label><span id='required_star'>*</span>
 						<input type="date" id='res_date' name="res_date" required  min='2019-01-01' />
 						<label for='res_date'>Reservation time</label><span id='required_star'>*</span>
-						<select id='select_time'>
+						<select id='select_time' class='select_time'>
 						</select>
 						<label for='spec_request'>Special Request</label>
 						<textarea name='spec_request' id="spec_request" cols="20" rows="10"></textarea>
-						<input type='submit' id='submit' value="Submit" />
+						<input type='submit' class='submit' value="Submit" />
 					</form>
 				</div>
 			</div>
+			<div class='res_divs'>
+				<div id='res_form_2'>
+					<div id='res_section_1'>
+						<h3>Table</h3>
+						<form id='form_2'>
+						<label for='date_2'>Date</label><span id='required_star'>*</span>
+						<input type="date" id='date_2' name="name_2" required />
+						<label for='res_date_2'>Reservation time</label><span id='required_star'>*</span>
+						<select id='select_time_2' class='select_time'>
+						</select>
+						<label for='party_size'>Party size</label><span id='required_star'>*</span>
+						<select id='party_size_2' class='party_size' >
+						</select>
+						<input type='submit' class='submit' value="FIND A TABLE" id='submit_2' />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		</div>
 
 <!--Footer-->
