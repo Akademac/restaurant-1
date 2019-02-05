@@ -78,8 +78,41 @@ window.addEventListener('load', () => {
 
 			});
 		});
+ 	
+ 	let changeQuotes;
+
+ 	let objName = 16;
+
+ 	changeQuotes = setInterval(() => {
+ 		if(objName === 16) {
+ 			quoteData = quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
+						<p>${myJson[objName].name}</p>`;
+			quotes.innerHTML = quoteData;
+			objName++
+
+		}
+		else if(objName === 17) {
+			 quoteData = quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
+						<p>${myJson[objName].name}</p>`;
+			quotes.innerHTML = quoteData;
+			objName++;
+		}
+		else if(objName === 18) {
+			quoteData = quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
+						<p>${myJson[objName].name}</p>`;
+			quotes.innerHTML = quoteData;
+			objName++;
+			console.log(objName);
+		}
+		else if(objName > 18) {
+				objName = 16;
+				quoteData = quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
+						<p>${myJson[objName].name}</p>`;
+				quotes.innerHTML = quoteData;
+				objName++;
+			}
+ 	}, 10000);
 
  	 });
-
-});
+ });
 
