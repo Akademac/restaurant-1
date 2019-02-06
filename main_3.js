@@ -7,15 +7,23 @@ window.addEventListener('load', () => {
 		let breakfast = document.querySelector('#breakfast_json');
 		let lunch = document.querySelector('#lunch_json');
 		let dinner = document.querySelector('#dinner_json');
+		let sundayMenu = document.querySelector('#menu_2');
 		let data;
 		let data1;
 		let data2;
+
+
 
 		let date = new Date();
 
 		let day = date.getDay();
 
 		let displayDay = document.querySelector('#day');
+
+
+		let sundayNotice = document.createElement('P');
+
+		let sundayDiv = document.querySelector('#menu_2');
 
 		let dayArr = new Array(7);
 
@@ -29,10 +37,22 @@ window.addEventListener('load', () => {
 
 		displayDay.innerHTML = dayArr[day];
 
-
 		let x;
 
-		if(day) {
+		if(day === 0) {
+
+			sundayDiv.innerHTML = '';
+
+			sundayDiv.style.height = '12rem';
+
+
+			sundayDiv.appendChild(sundayNotice);
+		
+			sundayNotice.innerHTML = 'Come tomorrow to see menu for monday, have a nice day!'
+			sundayNotice.style.fontSize = '3rem';
+
+		}
+		else{
 			x = day-1;
 			data = `<h4>${myJson[19].breakfast[x].name}</h4>
 					<img src="${myJson[19].breakfast[x].img}" alt='Not found' />
@@ -54,7 +74,9 @@ window.addEventListener('load', () => {
 					<p>$${myJson[19].dinner[x].price}</p>
 					</div>
 				</div>`;
+	
 		}
+
 		breakfast.innerHTML = data;
 		lunch.innerHTML = data1;
 		dinner.innerHTML = data2;
