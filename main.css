@@ -323,14 +323,15 @@ hr {
 	border: 1px dotted var(--mainBlack);
 	margin: 5rem auto;
 	display: grid;
-	grid-template-rows: 12% 1% 25% 1% 25% 1% 25%;
+	grid-template-rows: 10% 1% 25% 1% 25% 1% 25%;
 	grid-gap: 2rem;
 	margin-bottom: 15rem;
 	text-align: center;
+
 }
 
 #menu_description {
-	margin-top: 3rem;
+	margin: 1rem 5rem;
 	padding: 2rem;
 }
 
@@ -340,18 +341,13 @@ hr {
 	grid-template-rows: 20% 80%;
 }
 
-.menu_items {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	padding: 3rem;
-}
 
 .menu_items img {
 	width: 300px;
 	height: 220px;
 }
 
-#dinner_description {
+.meal_description {
 	width: 250px;
 	margin: 2rem auto;
 }
