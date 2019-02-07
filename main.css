@@ -301,7 +301,7 @@ hr {
 	background-color: var(--mainBlack);
 	opacity: .9;
 	z-index: -100;
-	display: grid;
+	display: none;
 }
 
 #footerDiv {
