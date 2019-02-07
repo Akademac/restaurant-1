@@ -320,12 +320,11 @@ hr {
 }
 
 	/*Second Page*/
-}
 
 /*Menu*/
 
 #menu_2 {
-	width: 60%;
+	width: 80%;
 	height: 140rem;
 	border: 1px dotted var(--mainBlack);
 	margin: 5rem auto;
@@ -338,14 +337,16 @@ hr {
 }
 
 #menu_description {
-	margin: 1rem 5rem;
+	margin: 1rem auto;
 	padding: 2rem;
+	text-align: center;
 }
 
 .menu_2 {
 	padding: .5rem;
 	display: grid;
 	grid-template-rows: 20% 80%;
+	text-align: center;
 }
 
 
@@ -601,13 +602,7 @@ form select, input, #spec_request {
 
 /*Dots*/
 
-
 	#dots {
 		margin-top: 5rem;
 	}
-
-/*Footer*/
-
-
-
 }
