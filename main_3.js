@@ -12,14 +12,11 @@ window.addEventListener('load', () => {
 		let data1;
 		let data2;
 
-
-
 		let date = new Date();
 
 		let day = date.getDay();
 
 		let displayDay = document.querySelector('#day');
-
 
 		let sundayNotice = document.createElement('P');
 
@@ -80,6 +77,8 @@ window.addEventListener('load', () => {
 		breakfast.innerHTML = data;
 		lunch.innerHTML = data1;
 		dinner.innerHTML = data2;
+		console.log(x);
+		console.log(day);
 	
 	})
 });

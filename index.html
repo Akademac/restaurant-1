@@ -25,6 +25,16 @@
 				<li><a href='#footer'>Hours</a></li>
 				<li><a href='reservations.html'>Reservation</a></li>
 			</ul>
+			<i class='fas fa-bars'></i>
+		</div>
+		
+		<div class='mini_navs_items'>
+			<ul>
+				<li><a href='index.html'>Home</a></li>
+				<li><a href='menu.html'>Menu</a></li>
+				<li><a href='#footer'>Hours</a></li>
+				<li><a href='reservations.html'>Reservation</a></li>
+			</ul>		
 		</div>
 
 <!--Header-->
@@ -114,7 +124,7 @@
 				</div>
 				<div class='footer'>
 					<h3>About</h3>
-					<p>Lorem ipsum dolor sit amet, omittam voluptatum ei quo, erant liberavisse intellegebat ne mea. In clita aeterno disputando cum, no eam meis gloriatur contentiones. Sit noster omnesque percipit ex, illud molestie senserit te vis.</p>
+					<p>Lorem ipsum dolor sit amet, omittam voluptatum ei quo, erant liberavisse intellegebat ne mea.</p>
 				</div>
 				<div class='footer'>
 					<h3>Hours and info</h3>
@@ -128,5 +138,21 @@
 		</footer>
 
 		<script src='main.js'></script>
+		<script>
+			const navBars = document.querySelector('.fa-bars');
+
+			const mini_navs_items = document.querySelector('.mini_navs_items');
+
+			navBars.addEventListener('click', () => {
+
+			if(!(mini_navs_items.classList.contains('show_mini_nav'))) {
+					mini_navs_items.classList.add('show_mini_nav');
+				}
+			else {
+					mini_navs_items.classList.remove('show_mini_nav');	
+			}
+
+			});
+		</script>
 	</body>
 </html>
