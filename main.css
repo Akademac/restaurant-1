@@ -311,7 +311,7 @@ hr {
 	grid-template-columns: repeat(3, 1fr);
 	color: var(--mainWhite);
 	margin: 1rem auto;
-	grid-gap: 1rem;
+	grid-gap: .5rem;
 }
 
 
