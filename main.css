@@ -42,17 +42,24 @@ html, body {
 
 }
 
-li a{
+#nav li a{
 	color: var(--mainWhite);
 	text-decoration: none;
 }
 
-li a:hover {
+#nav li a:hover {
 	cursor: pointer;
 	text-decoration: underline;
 	color: var(--mainOrange);
 }
 
+.mini_navs_items {
+	display: none;
+}
+
+.fa-bars {
+	display: none;
+}
 /*Header*/
 
 #header {
@@ -66,9 +73,6 @@ li a:hover {
 }
 
 /*First section*/
-
-#first_container {
-}
 
 #firstSection {
 	height: 15rem;
@@ -297,23 +301,22 @@ hr {
 	background-color: var(--mainBlack);
 	opacity: .9;
 	z-index: -100;
+	display: grid;
 }
 
 #footerDiv {
-	width: 90%;
+	width: 100%;
 	height: 15rem;
 	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	color: var(--mainWhite);
 	margin: 1rem auto;
-	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
 }
 
-.footer {
-	padding: 2rem;
-	font-weight: bolder; 
-}
 
 	/*Second Page*/
+}
 
 /*Menu*/
 
@@ -467,4 +470,156 @@ form select, input, #spec_request {
 	padding: 0px;
 	margin: 0px auto;
 	width: 70%;
+}
+
+																		/*Media queries*/
+
+@media screen and (max-width: 650px) {
+	
+/*nav*/
+	
+	#nav ul {
+		display: none;
+	}
+
+	.fa-bars {
+		display: inline;
+		float: right;
+		font-size: 1.5rem;
+		padding: 1rem;
+		margin-top: .9rem;
+		cursor: pointer;
+	}
+
+	.mini_navs_items {
+		height: 8rem;
+		text-align: center;
+		text-decoration: none;
+		position: relative;
+		display: none;
+
+	}
+
+	.mini_navs_items a  {
+		text-decoration: none;
+		color: var(--mainBlack);
+	}
+
+	.mini_navs_items ul {
+		list-style: none;
+		padding: 0px;
+	}
+
+	.mini_navs_items ul li {
+		padding-top: .5rem;
+	}
+
+	.show_mini_nav {
+		display: block;
+	}
+
+/*first section*/	
+	
+	#firstSection {
+		height: 11rem;
+		display: grid;
+		grid-template-rows: 30% 70%;
+	}
+
+	#firstSection h2 {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+
+	#firstSection p {
+		font-size: .7rem;
+	}
+
+/*Second Section*/
+
+	#secondSection {
+		height: 30rem;
+		display: grid;
+		grid-template-columns: none;
+		grid-template-rows: repeat(3, 1fr);
+	} 
+
+
+	#lunchDiv {
+		width: 100%;
+		height: 100%;
+		display: inline;
+		background-color: var(--mainBlack);
+		opacity: 0;
+		position: absolute;
+		transition: 2s all;
+		display: grid;
+		grid-template-rows: 40% 60%;
+		color: var(--mainWhite);
+		text-align: center;
+		justify-content: center;
+	}
+
+	#secondSection h3 {
+		margin: 2rem auto;
+		text-transform: uppercase;
+	}
+
+/*Third Section*/
+
+	#thirdSection {
+		width: 100%;
+		height: 350px;
+		background-color: var(--lightGrey);
+		display: grid;
+		margin-top: -10rem;
+		text-align: center;
+		padding-top: 5rem;
+		grid-template-rows: 14% 46% 20%;
+		justify-items: center;
+	}
+
+
+/*Fourts section*/
+
+	#fourthSection {
+		display: grid;
+		margin: 5rem auto;
+		height: 41rem;
+		grid-template-columns: none;
+		grid-template-rows: repeat(3, 1fr);
+		grid-gap: 1rem;
+	}
+
+	.fourthSection {
+		padding-top: 1rem;
+	}
+
+/*Dots*/
+
+
+	#dots {
+		margin-top: 5rem;
+	}
+
+/*Footer*/
+
+
+	#footerDiv p {
+		font-size: .8rem;
+	}
+
+	#footerDiv h3 {
+		font-size: 1.1rem;
+	}
+
+	#footerDiv h2 {
+		font-size: 1.3rem;
+	}
+
+	#footer {
+		height: 17rem;
+	}
+
+
 }
