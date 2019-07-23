@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
   	.then(function(myJson) {
    		console.log(myJson[17].name);
 
-   		quoteData = quoteData = `<p id='quote_1' class='quotes'>${myJson[16].quote}</p>
+   		 quoteData = `<p id='quote_1' class='quotes'>${myJson[16].quote}</p>
 						<p>${myJson[16].name}</p>`;
 		quotes.innerHTML = quoteData;
 
@@ -85,20 +85,20 @@ window.addEventListener('load', () => {
 
  	changeQuotes = setInterval(() => {
  		if(objName === 16) {
- 			quoteData = quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
+ 			quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
 						<p>${myJson[objName].name}</p>`;
 			quotes.innerHTML = quoteData;
 			objName++
 
 		}
 		else if(objName === 17) {
-			 quoteData = quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
+			 quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
 						<p>${myJson[objName].name}</p>`;
 			quotes.innerHTML = quoteData;
 			objName++;
 		}
 		else if(objName === 18) {
-			quoteData = quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
+			quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
 						<p>${myJson[objName].name}</p>`;
 			quotes.innerHTML = quoteData;
 			objName++;
@@ -106,7 +106,7 @@ window.addEventListener('load', () => {
 		}
 		else if(objName > 18) {
 				objName = 16;
-				quoteData = quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
+				quoteData = `<p id='quote_1' class='quotes'>${myJson[objName].quote}</p>
 						<p>${myJson[objName].name}</p>`;
 				quotes.innerHTML = quoteData;
 				objName++;
